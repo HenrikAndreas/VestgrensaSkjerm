@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm", "VestgrensaSkjerm\VestgrensaSkjerm.csproj", "{58268F79-EA3D-4776-8F7B-6096CB9F6F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Common", "VestgrensaSkjerm.Common\VestgrensaSkjerm.Common.csproj", "{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Services", "VestgrensaSkjerm.Services\VestgrensaSkjerm.Services.csproj", "{DA7CE5F1-97A9-44E6-827E-81D5685390F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
