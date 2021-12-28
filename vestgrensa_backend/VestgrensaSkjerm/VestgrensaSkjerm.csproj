@@ -8,11 +8,17 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\VestgrensaSkjerm.Common\VestgrensaSkjerm.Common.csproj" />
+      <ProjectReference Include="..\VestgrensaSkjerm.Data\VestgrensaSkjerm.Data.csproj" />
       <ProjectReference Include="..\VestgrensaSkjerm.Services\VestgrensaSkjerm.Services.csproj" />
     </ItemGroup>
 

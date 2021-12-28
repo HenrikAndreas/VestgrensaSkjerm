@@ -56,6 +56,88 @@
         }
       }
     },
+    "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
+        "projectName": "VestgrensaSkjerm.Data",
+        "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
+        "packagesPath": "/home/henrik/.nuget/packages/",
+        "outputPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/henrik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
+                "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -77,7 +159,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
+                "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -133,6 +219,9 @@
               "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
                 "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj"
               },
+              "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
+                "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
+              },
               "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj": {
                 "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj"
               }
@@ -149,6 +238,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

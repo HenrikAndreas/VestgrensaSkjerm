@@ -10,3 +10,11 @@
 /home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/obj/Debug/net6.0/VestgrensaSkjerm.Services.dll
 /home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/obj/Debug/net6.0/ref/VestgrensaSkjerm.Services.dll
 /home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/obj/Debug/net6.0/VestgrensaSkjerm.Services.pdb
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Common.deps.json
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Common.runtimeconfig.json
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Common
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Common.dll
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Data.dll
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Data.pdb
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/bin/Debug/net6.0/VestgrensaSkjerm.Common.pdb
+/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/obj/Debug/net6.0/VestgrensaSkjerm.Services.csproj.CopyComplete
