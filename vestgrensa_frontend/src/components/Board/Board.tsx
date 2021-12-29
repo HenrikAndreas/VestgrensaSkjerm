@@ -1,11 +1,16 @@
 import React from 'react';
 import './Board.css';
+import Container from '@mui/material/Container';
+import PeopleList from '../PeopleList/PeopleList';
 
 function Board() {
   return (
-    <div className="Board">
-      <p>Board</p>
-    </div>
+    <Container className="Board">
+      <PeopleList />
+    </Container>
+    // <div className="Board">
+    //   <p>Test</p>
+    // </div>
   );
 }
 

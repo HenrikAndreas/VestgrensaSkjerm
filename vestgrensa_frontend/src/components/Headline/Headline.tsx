@@ -1,14 +1,15 @@
 import React, { FunctionComponent} from 'react';
+import Container from '@mui/material/Container';
 import Clock from '../Clock/Clock';
 import './Headline.css';
 
 const Headline: FunctionComponent = (props) => {
 
     return (
-        <div className="Headline">  
-            <p>Welcome to Vestgrensa!</p>
+        <Container className="Headline">
+            <h1>Welcome to Vestgrensa!</h1>
             <Clock/>
-        </div>
+        </Container>
     );
 };
 

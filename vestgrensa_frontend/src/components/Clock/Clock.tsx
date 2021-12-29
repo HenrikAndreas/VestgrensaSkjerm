@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
+import Container from '@mui/material/Container';
 import './Clock.css';
 import moment from 'moment';    
 
@@ -22,10 +23,10 @@ const Clock: FunctionComponent = (props) => {
       }, []);
 
     return (
-        <div className="Clock">
+        <Container className="Clock">
             <p className="Time">{time}</p>
             <p className="Date">{date}</p>
-        </div>
+        </Container>
     );
 };
 
