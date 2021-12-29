@@ -34,7 +34,13 @@ public class PeopleController : ControllerBase
         People p = new People{Age = age, Birthday = d.ToUniversalTime(), Name = name, Studyprogramme = program, RoomID = roomID};
         
         People inserted = await _peopleService.Insert(p);
-        
+
         return Ok(inserted);
+    }
+
+    [HttpDelete(Name = "DeletePerson")]
+    public async Task<IActionResult> Delete()
+    {
+        return Ok();
     }
 }

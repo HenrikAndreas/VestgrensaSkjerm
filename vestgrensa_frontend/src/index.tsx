@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Board from './components/Board/Board';
+import Headline from './components/Headline/Headline';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Headline />
+    <Board />
   </React.StrictMode>,
   document.getElementById('root')
 );
