@@ -43,4 +43,11 @@ public class PeopleController : ControllerBase
     {
         return Ok();
     }
+    
+    
+    [HttpPut(Name = "UpdatePerson")]
+    public async Task<IActionResult> Update()
+    {
+        return Ok();
+    }
 }
