@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-const vestgrensaApi: string = `${process.env.REACT_APP_API_URL}/`;
+const vestgrensaApi: string = `https://localhost:7034`;
 
 const api: AxiosInstance = axios.create({
     baseURL: vestgrensaApi
