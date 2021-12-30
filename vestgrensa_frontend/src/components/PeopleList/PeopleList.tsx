@@ -9,11 +9,11 @@ interface Person {
     birthday: string
     name: string
     age: number
-    studyprogram: string
+    studyprogramme: string
     roomID: string
 }
 
-async function getPeople() {
+async function getPeople(): Promise<Array<Person>> {
     let response = await api.get<Array<Person>>('/People')
     let result: Array<Person> =response.data;
     return result;
@@ -22,10 +22,10 @@ async function getPeople() {
 const PeopleList: FunctionComponent = () => {
 
     const [peopleData, setPeople] = useState(Array<Person>());
-    getPeople();
+
     useEffect(() => {
         getPeople()
-            .then((res) => {
+            .then((res: Array<Person>) => {
                 setPeople(res);
             })
             .catch((err) => {
@@ -36,7 +36,7 @@ const PeopleList: FunctionComponent = () => {
     return (
         
         <div>
-            {peopleData.length > 0 ? peopleData[0].name : "NONE"}
+            {peopleData.length > 0 ? peopleData[0].studyprogramme : "NONE"}
             <p>a</p>
             {/* {peopleData.map((person) => {
                 return(
