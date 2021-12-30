@@ -14,35 +14,36 @@ interface Person {
 }
 
 async function getPeople() {
-    const result = await api.get('/People')
-
+    let response = await api.get<Array<Person>>('/People')
+    let result: Array<Person> =response.data;
     return result;
 }
 
 const PeopleList: FunctionComponent = () => {
 
-    const [peopleData, setPeople] = useState([]);
-    
+    const [peopleData, setPeople] = useState(Array<Person>());
+    getPeople();
     useEffect(() => {
         getPeople()
             .then((res) => {
-                console.log(res);
-                setPeople(res.data);
+                setPeople(res);
             })
             .catch((err) => {
                 console.log(err);
-            });
+            }); 
     }, []);
 
     return (
-        <p>{peopleData.toString()}</p>
-        // <div>
-        //     {people.map((p) => {
-        //         return(
-        //             <p>{p}</p>
-        //         )
-        //     })}
-        // </div>
+        
+        <div>
+            {peopleData.length > 0 ? peopleData[0].name : "NONE"}
+            <p>a</p>
+            {/* {peopleData.map((person) => {
+                return(
+                    <p>{person}</p>
+                )
+            })} */}
+        </div>
        
     );
 };
