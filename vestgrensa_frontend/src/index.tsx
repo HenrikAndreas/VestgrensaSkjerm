@@ -7,6 +7,9 @@ import Board from './components/Board/Board';
 import Headline from './components/Headline/Headline';
 ReactDOM.render(
   <React.StrictMode>
+    <video className="wallpaperVideo" autoPlay muted loop id="myVideo">
+      <source src="storm.mp4" type="video/mp4"/>
+    </video>
     <Headline />
     <Board />
   </React.StrictMode>,
