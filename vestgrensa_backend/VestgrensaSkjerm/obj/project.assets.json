@@ -2146,11 +2146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/VestgrensaSkjerm.csproj",
+      "projectUniqueName": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/VestgrensaSkjerm.csproj",
       "projectName": "VestgrensaSkjerm",
-      "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/VestgrensaSkjerm.csproj",
+      "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/VestgrensaSkjerm.csproj",
       "packagesPath": "/home/henrik/.nuget/packages/",
-      "outputPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/obj/",
+      "outputPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/henrik/.nuget/NuGet/NuGet.Config"
@@ -2165,14 +2165,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
-              "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj"
+            "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
+              "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj"
             },
-            "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
-              "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
+            "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
+              "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
             },
-            "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj": {
-              "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj"
+            "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj": {
+              "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj"
             }
           }
         }

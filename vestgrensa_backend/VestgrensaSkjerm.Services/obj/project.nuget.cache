@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4g8f5YNxfNNjNJGbVmvVe8JXauoda4dB3t28FV+Qv2WzYzVQT+DEP++1iAHzVq8n9FX+E/J+sKtiV+ZSIYhTNw==",
+  "dgSpecHash": "UmMFxRS7oXRTJscwmhvKYKPL1EJB8Ex3gJCbM/wENDpHCGPmen5BBNFwXePJ1fH1VyES/nZVWvDEZIYT631SwQ==",
   "success": true,
-  "projectFilePath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
+  "projectFilePath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
   "expectedPackageFiles": [
     "/home/henrik/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/henrik/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",

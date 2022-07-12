@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lqoVMQeSG9sOqBk6lGmTKSwES9RY+AcGirmj9gxeehu5QdUAB/2igAz+e0FltaW7+8AbZX5nFcUW0VBw/zm3kw==",
+  "dgSpecHash": "gMXNvqhYdjnGdc8ON3K3O4KfrrdhxtfUGI7s2HuOJglxEzvhxn4OZBDjQFIGe/9hQdAWDuQt5LiE8imMhpHIrQ==",
   "success": true,
-  "projectFilePath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
+  "projectFilePath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
