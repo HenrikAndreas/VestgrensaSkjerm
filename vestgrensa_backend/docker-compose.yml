@@ -1,0 +1,13 @@
+version: "1.0"
+services:
+  application:
+    build:
+      context: .
+      dockerfile: ./VestgrensaSkjerm/Dockerfile
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development #Set to 'Prooduction' for Prod
+
+    
