@@ -11,6 +11,7 @@ public class Resident
     public String Name { get; set; }
     public String RoomID { get; set; }
     public String Programme { get; set; }
-    public DateTime Birthday { get; set; }
     public String University { get; set; }
+    public DateTime Birthday { get; set; } 
+ 
 }

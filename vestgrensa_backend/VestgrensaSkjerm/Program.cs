@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using VestgrensaSkjerm.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Setting up database context
+builder.Services.AddDbContext<VestgrensaDataContext>((services, builder) =>
+{
+    builder.UseNpgsql("Host=localhost;Port=5432;Database=vestgrensa;Username=henrik;Password=vestgrensa");
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
