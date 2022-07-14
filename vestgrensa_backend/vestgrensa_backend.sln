@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Common", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Data", "VestgrensaSkjerm.Data\VestgrensaSkjerm.Data.csproj", "{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Services", "VestgrensaSkjerm.Services\VestgrensaSkjerm.Services.csproj", "{0F1811E2-2205-47C8-929F-957187C4D675}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

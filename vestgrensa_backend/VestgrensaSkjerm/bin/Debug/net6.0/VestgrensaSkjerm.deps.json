@@ -14,7 +14,8 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0-preview.6",
           "Swashbuckle.AspNetCore": "6.2.3",
           "VestgrensaSkjerm.Common": "1.0.0",
-          "VestgrensaSkjerm.Data": "1.0.0"
+          "VestgrensaSkjerm.Data": "1.0.0",
+          "VestgrensaSkjerm.Services": "1.0.0"
         },
         "runtime": {
           "VestgrensaSkjerm.dll": {}
@@ -726,6 +727,14 @@
         "runtime": {
           "VestgrensaSkjerm.Data.dll": {}
         }
+      },
+      "VestgrensaSkjerm.Services/1.0.0": {
+        "dependencies": {
+          "VestgrensaSkjerm.Data": "1.0.0"
+        },
+        "runtime": {
+          "VestgrensaSkjerm.Services.dll": {}
+        }
       }
     }
   },
@@ -1252,6 +1261,11 @@
       "sha512": ""
     },
     "VestgrensaSkjerm.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VestgrensaSkjerm.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

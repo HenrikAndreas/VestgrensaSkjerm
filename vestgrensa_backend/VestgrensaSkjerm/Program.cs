@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using VestgrensaSkjerm.Data;
+using VestgrensaSkjerm.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<VestgrensaDataContext>((services, builder) =>
 {
     builder.UseNpgsql("Host=localhost;Port=5432;Database=vestgrensa;Username=henrik;Password=vestgrensa");
-});
+}, ServiceLifetime.Singleton);
+// Setting up the services as singleton
+builder.Services.AddSingleton<ResidentService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

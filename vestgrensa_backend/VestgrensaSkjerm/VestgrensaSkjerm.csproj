@@ -24,6 +24,7 @@
     <ItemGroup>
       <ProjectReference Include="..\VestgrensaSkjerm.Common\VestgrensaSkjerm.Common.csproj" />
       <ProjectReference Include="..\VestgrensaSkjerm.Data\VestgrensaSkjerm.Data.csproj" />
+      <ProjectReference Include="..\VestgrensaSkjerm.Services\VestgrensaSkjerm.Services.csproj" />
     </ItemGroup>
 
 </Project>

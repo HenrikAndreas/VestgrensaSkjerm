@@ -30,9 +30,6 @@ namespace VestgrensaSkjerm.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("Age")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime>("Birthday")
                         .HasColumnType("timestamp with time zone");
 

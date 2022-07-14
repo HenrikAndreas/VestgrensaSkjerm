@@ -1011,6 +1011,19 @@
         "runtime": {
           "bin/placeholder/VestgrensaSkjerm.Data.dll": {}
         }
+      },
+      "VestgrensaSkjerm.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "VestgrensaSkjerm.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VestgrensaSkjerm.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VestgrensaSkjerm.Services.dll": {}
+        }
       }
     }
   },
@@ -3364,6 +3377,11 @@
       "type": "project",
       "path": "../VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
       "msbuildProject": "../VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
+    },
+    "VestgrensaSkjerm.Services/1.0.0": {
+      "type": "project",
+      "path": "../VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
+      "msbuildProject": "../VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3374,7 +3392,8 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.0-preview.6",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "VestgrensaSkjerm.Common >= 1.0.0",
-      "VestgrensaSkjerm.Data >= 1.0.0"
+      "VestgrensaSkjerm.Data >= 1.0.0",
+      "VestgrensaSkjerm.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3407,6 +3426,9 @@
             },
             "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
               "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
+            },
+            "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj": {
+              "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj"
             }
           }
         }

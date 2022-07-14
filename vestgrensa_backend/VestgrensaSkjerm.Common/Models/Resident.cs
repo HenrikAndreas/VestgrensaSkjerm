@@ -5,9 +5,9 @@ namespace VestgrensaSkjerm.Common.Models;
 
 public class Resident
 {
+    
     [Key]
     public int ID { get; set; }
-    public int Age { get; set; }
     public String Name { get; set; }
     public String RoomID { get; set; }
     public String Programme { get; set; }
