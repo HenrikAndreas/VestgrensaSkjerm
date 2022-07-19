@@ -28,6 +28,11 @@ To remove a migration (cd into VestgrensaSkjerm.Data)
 To list migrations (cd VestgrensaSkjerm.Data)
 - dotnet ef migrations list
 
+#### Starting new local database
+We need dotnet ef
+- dotnet tools install dotnet-ef
+Then update database
+- dotnet ef update database --project VestgrensaSkjerm
 
 ### _VestgrensaSkjerm.Common_
 This projects contains functions and classes that are shared between projects, and to make the main project more minimal all helper / utility functions are placed here.

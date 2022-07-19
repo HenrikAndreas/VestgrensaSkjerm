@@ -3031,11 +3031,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
+      "projectUniqueName": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
       "projectName": "VestgrensaSkjerm.Services",
-      "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
+      "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/VestgrensaSkjerm.Services.csproj",
       "packagesPath": "/home/henrik/.nuget/packages/",
-      "outputPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/obj/",
+      "outputPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/henrik/.nuget/NuGet/NuGet.Config"
@@ -3050,8 +3050,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
-              "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
+            "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
+              "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj"
             }
           }
         }
@@ -3075,12 +3075,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.6, 6.0.6]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
       }
     }
   }

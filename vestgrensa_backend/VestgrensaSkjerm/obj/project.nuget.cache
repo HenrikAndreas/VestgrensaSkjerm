@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zkUTA1o4R6iogMZUOHB3kZzKSvXpJz5u+HDz41FwsFJ5rCtEewV1W0O3YS1hjrb0k4j1qL3Lz5Tbroxv7Jyr0A==",
+  "dgSpecHash": "Cx555xID8d67dxEAhWpIR4/YKjiNf9amB6dqO/UWOgSLKWWcFcpzDth/aCA0d+et042auNHWv/bLF+XKJmQuDA==",
   "success": true,
-  "projectFilePath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/VestgrensaSkjerm.csproj",
+  "projectFilePath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm/VestgrensaSkjerm.csproj",
   "expectedPackageFiles": [
     "/home/henrik/.nuget/packages/azure.core/1.20.0/azure.core.1.20.0.nupkg.sha512",
     "/home/henrik/.nuget/packages/azure.identity/1.5.0/azure.identity.1.5.0.nupkg.sha512",
@@ -76,7 +76,8 @@
     "/home/henrik/.nuget/packages/system.text.json/4.6.0/system.text.json.4.6.0.nupkg.sha512",
     "/home/henrik/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/home/henrik/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/henrik/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
+    "/home/henrik/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512",
+    "/home/henrik/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.6/microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512"
   ],
   "logs": []
 }

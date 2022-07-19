@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gMXNvqhYdjnGdc8ON3K3O4KfrrdhxtfUGI7s2HuOJglxEzvhxn4OZBDjQFIGe/9hQdAWDuQt5LiE8imMhpHIrQ==",
+  "dgSpecHash": "dOK9nsK7/E3eK0RGZRiSVALegbOuEw5N66aNQD3WylpgGwblOM3Vhvsp6Epog1fFrI1m1OH1LNXWL2Waxo/BVw==",
   "success": true,
-  "projectFilePath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
+  "expectedPackageFiles": [
+    "/home/henrik/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.6/microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512"
+  ],
   "logs": []
 }
