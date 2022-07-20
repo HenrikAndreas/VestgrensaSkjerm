@@ -18,13 +18,10 @@ public class ResidentController : ControllerBase
         _residentService = residentService;
     }
 
-    [HttpPost(Name = "AddResident")]
+    [HttpPost("AddResident")]
     public async Task<ActionResult> AddResident(Resident resident)
     {
-        // Insert to DB via Service here in a try / catch
         Console.Write("Adding Resident..." + resident.Name + "\n");
-        
-        // Validate
 
         // Creating new resident and return
         Resident res = await _residentService.addResident(resident);
@@ -32,12 +29,33 @@ public class ResidentController : ControllerBase
         return Ok(res);
     }
 
-    [HttpGet(Name = "GetResidentList")]
+    [HttpGet("GetResidentList")]
     public async Task<ActionResult> GetResidentList()
     {
         IEnumerable<Resident> residentList = await _residentService.getResidentList();
         
         return Ok(residentList);
     }
-    
+
+    [HttpGet("GetResident")]
+    public async Task<ActionResult> GetResident(string? name, int? id = null)
+    {
+        if (id != null && name != null)
+        {
+            // Search by id?? Or throw error
+        }
+        
+        if (id != null)
+        {
+            Console.Write("Searching resident by ID\n");
+        } else if (name != null)
+        {
+            Console.Write("Searching resident by Name\n");
+        }
+
+        IEnumerable<Resident> residents = await _residentService.getResident(name);
+
+        return Ok(residents);
+    }
+
 }

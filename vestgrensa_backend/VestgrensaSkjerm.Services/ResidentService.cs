@@ -25,4 +25,9 @@ public class ResidentService
         return await _dbContext.Residents.ToListAsync();
 
     }
+     
+    public async Task<IEnumerable<Resident>> getResident(string name)
+    {
+        return await _dbContext.Residents.Where(resident => resident.Name == name).ToListAsync();
+    }
 }

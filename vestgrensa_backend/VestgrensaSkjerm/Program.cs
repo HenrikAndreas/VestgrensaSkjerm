@@ -11,16 +11,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Retrieving connection strings
+var dbConnectionString = builder.Configuration.GetSection("Database:DbConnectionString").Value;
+
 // Setting up database context
 builder.Services.AddDbContext<VestgrensaDataContext>((services, builder) =>
 {
-    builder.UseNpgsql("Host=localhost;Port=5432;Database=vestgrensa;Username=henrik;Password=vestgrensa");
+    builder.UseNpgsql(dbConnectionString);
 }, ServiceLifetime.Singleton);
 // Setting up the services as singleton
 builder.Services.AddSingleton<ResidentService>();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -28,7 +30,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 
 app.UseHttpsRedirection();
 
