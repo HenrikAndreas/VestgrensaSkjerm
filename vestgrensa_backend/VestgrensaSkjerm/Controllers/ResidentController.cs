@@ -64,7 +64,7 @@ public class ResidentController : ControllerBase
     [HttpDelete("RemoveResident")]
     public async Task<ActionResult> RemoveResident(int id)
     {
-        resident = await _residentService.removeResident(id);
+        Resident resident = await _residentService.removeResident(id);
         return Ok(resident);
     }
 
