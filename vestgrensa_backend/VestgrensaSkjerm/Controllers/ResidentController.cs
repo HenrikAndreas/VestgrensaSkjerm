@@ -40,22 +40,32 @@ public class ResidentController : ControllerBase
     [HttpGet("GetResident")]
     public async Task<ActionResult> GetResident(string? name, int? id = null)
     {
-        if (id != null && name != null)
+        if (id == null && name == null)
         {
-            // Search by id?? Or throw error
+            Console.Write("Bad Request: No parameters were given\n");
+            return BadRequest("Please provide parameters");
         }
+
+        IEnumerable<Resident> residents;
         
         if (id != null)
         {
             Console.Write("Searching resident by ID\n");
-        } else if (name != null)
-        {
-            Console.Write("Searching resident by Name\n");
+            residents = await _residentService.getResidentByID(id);
+            return Ok(residents);
         }
-
-        IEnumerable<Resident> residents = await _residentService.getResident(name);
-
+        
+        Console.Write("Searching resident by Name\n");
+        residents = await _residentService.getResidentByName(name);
         return Ok(residents);
+        
+    }
+
+    [HttpDelete("RemoveResident")]
+    public async Task<ActionResult> RemoveResident(int id)
+    {
+        resident = await _residentService.removeResident(id);
+        return Ok(resident);
     }
 
 }
