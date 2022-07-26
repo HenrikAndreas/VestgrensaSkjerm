@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm", "VestgrensaSkjerm\VestgrensaSkjerm.csproj", "{58268F79-EA3D-4776-8F7B-6096CB9F6F00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm", "VestgrensaSkjerm\VestgrensaSkjerm.csproj", "{578B2582-2C04-439F-A35C-CFF5E9AF6B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Common", "VestgrensaSkjerm.Common\VestgrensaSkjerm.Common.csproj", "{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Common", "VestgrensaSkjerm.Common\VestgrensaSkjerm.Common.csproj", "{46BC96D4-1FD2-4E92-B6F4-7EA640EACE22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Services", "VestgrensaSkjerm.Services\VestgrensaSkjerm.Services.csproj", "{DA7CE5F1-97A9-44E6-827E-81D5685390F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Data", "VestgrensaSkjerm.Data\VestgrensaSkjerm.Data.csproj", "{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Data", "VestgrensaSkjerm.Data\VestgrensaSkjerm.Data.csproj", "{50766F1E-66EC-45C8-9670-9080888BF24F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VestgrensaSkjerm.Services", "VestgrensaSkjerm.Services\VestgrensaSkjerm.Services.csproj", "{0F1811E2-2205-47C8-929F-957187C4D675}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,21 +14,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58268F79-EA3D-4776-8F7B-6096CB9F6F00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22FFD13A-4DE6-4837-85A6-EBF709ABD2C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA7CE5F1-97A9-44E6-827E-81D5685390F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50766F1E-66EC-45C8-9670-9080888BF24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50766F1E-66EC-45C8-9670-9080888BF24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50766F1E-66EC-45C8-9670-9080888BF24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50766F1E-66EC-45C8-9670-9080888BF24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578B2582-2C04-439F-A35C-CFF5E9AF6B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578B2582-2C04-439F-A35C-CFF5E9AF6B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578B2582-2C04-439F-A35C-CFF5E9AF6B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578B2582-2C04-439F-A35C-CFF5E9AF6B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BC96D4-1FD2-4E92-B6F4-7EA640EACE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BC96D4-1FD2-4E92-B6F4-7EA640EACE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BC96D4-1FD2-4E92-B6F4-7EA640EACE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BC96D4-1FD2-4E92-B6F4-7EA640EACE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C80F5A-9D19-4BF5-9F83-FA74598A6447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1811E2-2205-47C8-929F-957187C4D675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

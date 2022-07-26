@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {}
+    "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {}
   },
   "projects": {
-    "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
+    "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
+        "projectUniqueName": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
         "projectName": "VestgrensaSkjerm.Common",
-        "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
+        "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj",
         "packagesPath": "/home/henrik/.nuget/packages/",
-        "outputPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/obj/",
+        "outputPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/henrik/.nuget/NuGet/NuGet.Config"
@@ -47,23 +47,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
+    "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
+        "projectUniqueName": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
         "projectName": "VestgrensaSkjerm.Data",
-        "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
+        "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/VestgrensaSkjerm.Data.csproj",
         "packagesPath": "/home/henrik/.nuget/packages/",
-        "outputPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/obj/",
+        "outputPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/henrik/.nuget/NuGet/NuGet.Config"
@@ -78,8 +84,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
-                "projectPath": "/home/henrik/Documents/programming/projects/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj"
+              "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj": {
+                "projectPath": "/home/henrik/Documents/programming/VestgrensaSkjerm/vestgrensa_backend/VestgrensaSkjerm.Common/VestgrensaSkjerm.Common.csproj"
               }
             }
           }
@@ -96,27 +102,27 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0-preview.6.22329.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0-preview.6.22329.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0-preview.6.22329.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0-preview.6.22329.4, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[7.0.0-preview.6, )"
             }
           },
           "imports": [
@@ -129,12 +135,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -17,37 +17,41 @@ namespace VestgrensaSkjerm.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.1")
+                .HasAnnotation("ProductVersion", "7.0.0-preview.6.22329.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("VestgrensaSkjerm.Common.Models.People", b =>
+            modelBuilder.Entity("VestgrensaSkjerm.Common.Models.Resident", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Age")
-                        .HasColumnType("integer");
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<DateTime>("Birthday")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Programme")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("RoomID")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Studyprogramme")
+                    b.Property<string>("University")
+                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
-                    b.ToTable("Peoples");
+                    b.ToTable("Residents");
                 });
 #pragma warning restore 612, 618
         }

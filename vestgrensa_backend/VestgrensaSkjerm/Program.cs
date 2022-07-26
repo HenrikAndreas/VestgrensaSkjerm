@@ -10,17 +10,23 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Retrieving connection strings
+var dbConnectionString = builder.Configuration.GetSection("Database:DbConnectionString").Value;
+
+// Setting up database context
 builder.Services.AddDbContext<VestgrensaDataContext>((services, builder) =>
 {
-    builder.UseNpgsql("Host=localhost;Port=5432;Database=vestgrensa;Username=henrik;Password=vestgrensa");
-});
-builder.Services.AddScoped<PeopleService>();
+    builder.UseNpgsql(dbConnectionString);
+}, ServiceLifetime.Singleton);
+// Setting up the services as singleton
+builder.Services.AddSingleton<ResidentService>();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    Console.Write("Running Application in Development Mode\n");
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -30,10 +36,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.UseCors(b => b
-    .AllowAnyOrigin()
-    .AllowAnyHeader()
-    .AllowAnyMethod());
 
 app.Run();
