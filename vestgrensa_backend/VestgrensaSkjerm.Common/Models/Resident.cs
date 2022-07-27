@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
 namespace VestgrensaSkjerm.Common.Models;
 
@@ -13,5 +12,7 @@ public class Resident
     public String Programme { get; set; }
     public String University { get; set; }
     public DateTime Birthday { get; set; } 
- 
+    public Boolean Current { get; set; }
+    
+
 }

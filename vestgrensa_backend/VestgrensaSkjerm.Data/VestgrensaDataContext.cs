@@ -12,5 +12,13 @@ public class VestgrensaDataContext : DbContext
     {
         
     }
-    
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Resident>()
+            .Property(resident => resident.Current)
+            .HasDefaultValue(true);
+    }   
 }
