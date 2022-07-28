@@ -61,10 +61,25 @@ public class ResidentController : ControllerBase
         
     }
 
-    [HttpDelete("RemoveResident")]
+    [HttpPut("RemoveResident")]
     public async Task<ActionResult> RemoveResident(int id)
     {
         Resident resident = await _residentService.removeResident(id);
+        
+        return Ok(resident);
+    }
+
+    [HttpPut("EditResident")]
+    public async Task<ActionResult> EditResident(Resident resident)
+    {
+        return Ok("Endpoint not configured");
+    }
+
+    [HttpDelete("DeleteResident")]
+    public async Task<ActionResult> DeleteResident(int id)
+    {
+        Resident resident = await _residentService.deleteResident(id);
+        
         return Ok(resident);
     }
 

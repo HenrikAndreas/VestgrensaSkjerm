@@ -36,13 +36,22 @@ public class ResidentService
     {
         return await _dbContext.Residents.Where(resident => resident.ID == id).ToListAsync();
     }
-
+    
     public async Task<Resident> removeResident(int id)
     {
         Resident resident = await _dbContext.Residents.FindAsync(id);
+        resident.Current = false;
+        _dbContext.Update(resident);
+        await _dbContext.SaveChangesAsync();
+        return resident;
+    }
+
+    public async Task<Resident> deleteResident(int id)
+    {
+        Resident resident = await _dbContext.Residents.FindAsync(id);
+
         _dbContext.Residents.Remove(resident);
         await _dbContext.SaveChangesAsync();
-
         return resident;
 
     }
