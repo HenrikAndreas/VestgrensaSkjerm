@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VestgrensaSkjerm.Common.Models;
+using VestgrensaSkjerm.Common.Parameters;
 using VestgrensaSkjerm.Data;
 
 namespace VestgrensaSkjerm.Services;
@@ -20,16 +21,24 @@ public class ResidentService
         return resident;
     }
     
-    public async Task<IEnumerable<Resident>> getResidentList()
+    public async Task<IEnumerable<Resident>> getResidentList(ResidentFilter filter)
     {
-        return await _dbContext.Residents.ToListAsync();
+        // if filter.Name {
+        // name = filter.Name
+        // } else {
+        // name = ""
+        // }
+        
+        // Do as bove for all columns for search
+        return await _dbContext.Residents.Where(r => r.Name.Contains(filter.Name)).ToListAsync();
         
     }
-     
+    
     public async Task<IEnumerable<Resident>> getResidentByName(string? name)
     {
         
-        return await _dbContext.Residents.Where(resident => resident.Name.ToLower().Contains(name.ToLower())).ToListAsync();
+        return await _dbContext.Residents.Where(
+            resident => resident.Name.ToLower().Contains(name.ToLower())).ToListAsync();
     }
 
     public async Task<IEnumerable<Resident>> getResidentByID(int? id)

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 using VestgrensaSkjerm.Common.Models;
-using VestgrensaSkjerm.Data;
+using VestgrensaSkjerm.Common.Parameters;
 using VestgrensaSkjerm.Services;
 
 namespace VestgrensaSkjerm.Controllers;
@@ -30,10 +30,9 @@ public class ResidentController : ControllerBase
     }
 
     [HttpGet("GetResidentList")]
-    public async Task<ActionResult> GetResidentList()
+    public async Task<ActionResult> GetResidentList([FromQuery] ResidentFilter filter)
     {
-        IEnumerable<Resident> residentList = await _residentService.getResidentList();
-        
+        IEnumerable<Resident> residentList = await _residentService.getResidentList(filter);
         return Ok(residentList);
     }
 
