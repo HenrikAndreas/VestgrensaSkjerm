@@ -23,14 +23,11 @@ public class ResidentService
     
     public async Task<IEnumerable<Resident>> getResidentList(ResidentFilter filter)
     {
-        // if filter.Name {
-        // name = filter.Name
-        // } else {
-        // name = ""
-        // }
-        
-        // Do as bove for all columns for search
-        return await _dbContext.Residents.Where(r => r.Name.Contains(filter.Name)).ToListAsync();
+        return await _dbContext.Residents
+            .Where(r=> r.Name.ToLower().Contains((filter.Name != null) ? filter.Name.ToLower() : ""))
+            .Where(r=> r.RoomID.ToLower().Contains((filter.RoomID != null) ? filter.RoomID.ToLower() : ""))
+            .Where(r  => (filter.Current != null) ? r.Current.Equals(filter.Current) : r.Current.Equals(true) || r.Current.Equals(false))
+            .ToListAsync();
         
     }
     
