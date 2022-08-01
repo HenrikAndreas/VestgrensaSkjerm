@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace VestgrensaSkjerm.Common.Models;
 
@@ -6,6 +8,7 @@ public class Resident
 {
     
     [Key]
+    [JsonIgnore]
     public int ID { get; set; }
     public String Name { get; set; }
     public String RoomID { get; set; }
