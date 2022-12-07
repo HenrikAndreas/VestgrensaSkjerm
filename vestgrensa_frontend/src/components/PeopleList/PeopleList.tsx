@@ -14,7 +14,7 @@ interface Person {
 
 
 async function getPeople(): Promise<Array<Person>> {
-    let response = await api.get<Array<Person>>('/People')
+    let response = await api.get<Array<Person>>('/Resident/GetResidentList')
     let result: Array<Person> =response.data;
     return result;
 }
@@ -37,10 +37,9 @@ const PeopleList: FunctionComponent = () => {
 
     const columns: GridColDef[] = [
         {field: "name", headerName: "Navn", flex: 1},
-        {field: "age", headerName: "Alder", flex: 1},
         {field: "roomID", headerName: "Romnummer", flex: 1},
-        {field: "studyprogramme", headerName: "Studie", flex: 1}
-
+        {field: "programme", headerName: "Studie", flex: 1},
+        {field: "birthday", headerName: "Fødselsdag", flex: 1}
     ]
 
     return (

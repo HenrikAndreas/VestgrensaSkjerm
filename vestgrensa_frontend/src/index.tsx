@@ -2,16 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Board from './components/Board/Board';
-import Headline from './components/Headline/Headline';
+import Screen from './components/Screen/Screen';
+import Admin from './components/Admin/Admin';
+
 ReactDOM.render(
   <React.StrictMode>
-    <video className="wallpaperVideo" autoPlay muted loop id="myVideo">
-      <source src="storm.mp4" type="video/mp4"/>
-    </video>
-    <Headline />
-    <Board />
+
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Screen/>} path='/skjerm'/>
+        <Route element={<Admin/>} path='admin'/>
+        <Route path='/'/>
+
+      </Routes>
+    </BrowserRouter>
+
+
+
   </React.StrictMode>,
   document.getElementById('root')
 );
