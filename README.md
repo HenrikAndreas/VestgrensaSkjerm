@@ -27,7 +27,7 @@ To Initially create a migration (Stay in root directory):
 
 - dotnet ef migrations add InitialCreate --startup-project VestgrensaSkjerm --project VestgrensaSkjerm.Data --context VestgrensaDataContext
 
-To create new migrations (cd into VestgrensaSkjerm.Data)
+To create new migrations (cd into VestgrensaSkjerm)
 
 - dotnet ef database update --project VestgrensaSkjerm
 

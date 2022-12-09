@@ -30,8 +30,6 @@ const Clock: FunctionComponent = (props) => {
           navigate(path)
       }
   
-
-
     return (
         <div onClick={routeChange}>
             <Container className="Clock">

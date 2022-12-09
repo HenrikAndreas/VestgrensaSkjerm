@@ -17,7 +17,7 @@ const Screen: FunctionComponent = (props) => {
             <div className="content">
                 <Headline/>
                 <Board/>
-
+                
             </div>
         </div>
     );

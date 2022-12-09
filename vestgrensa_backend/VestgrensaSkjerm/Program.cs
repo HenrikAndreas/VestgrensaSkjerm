@@ -22,6 +22,7 @@ builder.Services.AddDbContext<VestgrensaDataContext>((services, builder) =>
 }, ServiceLifetime.Singleton);
 // Setting up the services as singleton
 builder.Services.AddSingleton<ResidentService>();
+builder.Services.AddSingleton<MessageService>();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

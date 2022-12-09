@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using VestgrensaSkjerm.Data;
@@ -11,9 +12,11 @@ using VestgrensaSkjerm.Data;
 namespace VestgrensaSkjerm.Data.Migrations
 {
     [DbContext(typeof(VestgrensaDataContext))]
-    partial class VestgrensaDataContextModelSnapshot : ModelSnapshot
+    [Migration("20221209095944_MsgSecondaryKey")]
+    partial class MsgSecondaryKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
