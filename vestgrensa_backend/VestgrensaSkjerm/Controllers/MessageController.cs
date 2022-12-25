@@ -19,11 +19,12 @@ public class MessageController: ControllerBase
     }
 
     [HttpPost("AddMessage")]
-    public async Task<ActionResult> AddMessage (Message message)
+    public async Task<ActionResult> AddMessage ([FromBody] Message message)
     {
 
         // Creating new message and return
         Message res = await _messageService.addMessage(message);
+        
         
         return Ok(res);
     }

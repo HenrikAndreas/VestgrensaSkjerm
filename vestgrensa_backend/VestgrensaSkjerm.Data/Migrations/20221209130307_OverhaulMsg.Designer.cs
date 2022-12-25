@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using VestgrensaSkjerm.Data;
@@ -11,9 +12,11 @@ using VestgrensaSkjerm.Data;
 namespace VestgrensaSkjerm.Data.Migrations
 {
     [DbContext(typeof(VestgrensaDataContext))]
-    partial class VestgrensaDataContextModelSnapshot : ModelSnapshot
+    [Migration("20221209130307_OverhaulMsg")]
+    partial class OverhaulMsg
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,7 +33,7 @@ namespace VestgrensaSkjerm.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("ResidentID")
+                    b.Property<int?>("ResidentID")
                         .HasColumnType("integer");
 
                     b.Property<string>("Text")
@@ -87,13 +90,14 @@ namespace VestgrensaSkjerm.Data.Migrations
 
             modelBuilder.Entity("VestgrensaSkjerm.Common.Models.Message", b =>
                 {
-                    b.HasOne("VestgrensaSkjerm.Common.Models.Resident", "Resident")
-                        .WithMany()
-                        .HasForeignKey("ResidentID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("VestgrensaSkjerm.Common.Models.Resident", null)
+                        .WithMany("Messages")
+                        .HasForeignKey("ResidentID");
+                });
 
-                    b.Navigation("Resident");
+            modelBuilder.Entity("VestgrensaSkjerm.Common.Models.Resident", b =>
+                {
+                    b.Navigation("Messages");
                 });
 #pragma warning restore 612, 618
         }

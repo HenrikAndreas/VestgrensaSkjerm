@@ -1,4 +1,5 @@
-﻿using VestgrensaSkjerm.Common.Models;
+﻿using System.Reflection.Metadata;
+using VestgrensaSkjerm.Common.Models;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -21,5 +22,7 @@ public class VestgrensaDataContext : DbContext
         modelBuilder.Entity<Resident>()
             .Property(resident => resident.Current)
             .HasDefaultValue(true);
+        
+
     }   
 }

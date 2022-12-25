@@ -13,7 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route element={<Screen/>} path='/skjerm'/>
-        <Route element={<Admin/>} path='admin'/>
+        <Route element={<Admin/>} path='/admin'/>
         <Route path='/'/>
 
       </Routes>

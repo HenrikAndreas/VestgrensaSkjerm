@@ -33,7 +33,7 @@ public class ResidentController : ControllerBase
     public async Task<ActionResult> GetResidentList([FromQuery] ResidentFilter filter)
     {
         IEnumerable<Resident> residentList = await _residentService.getResidentList(filter);
-        Console.WriteLine(residentList.ElementAt(0).ID);
+        Console.WriteLine(residentList.ElementAt(0).ResidentID);
         return Ok(residentList);
     }
 

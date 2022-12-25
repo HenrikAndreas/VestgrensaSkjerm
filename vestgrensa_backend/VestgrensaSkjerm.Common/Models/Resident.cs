@@ -8,8 +8,7 @@ public class Resident
 {
     
     [Key]
-
-    public int ID { get; set; }
+    public int ResidentID { get; set; }
     public String Name { get; set; }
     public String RoomID { get; set; }
     public String Programme { get; set; }
@@ -17,5 +16,4 @@ public class Resident
     public DateTime Birthday { get; set; } 
     public Boolean Current { get; set; }
     
-
 }

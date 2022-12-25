@@ -2,16 +2,8 @@ import React, { FunctionComponent, useState, useEffect} from 'react';
 import api from '../../api/api'
 import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
 import "./PeopleList.css"
-
-interface Person {
-    id: number
-    birthday: string
-    name: string
-    age: number
-    studyprogramme: string  
-    roomID: string
-}
-
+import Person from "../../interfaces/Person"
+ 
 
 async function getPeople(): Promise<Array<Person>> {
     let response = await api.get<Array<Person>>('/Resident/GetResidentList')

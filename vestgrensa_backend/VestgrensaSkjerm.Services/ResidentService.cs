@@ -40,7 +40,7 @@ public class ResidentService
 
     public async Task<IEnumerable<Resident>> getResidentByID(int? id)
     {
-        return await _dbContext.Residents.Where(resident => resident.ID == id).ToListAsync();
+        return await _dbContext.Residents.Where(resident => resident.ResidentID == id).ToListAsync();
     }
     
     public async Task<Resident> removeResident(int id)

@@ -19,10 +19,10 @@ var dbConnectionString = builder.Configuration.GetSection("Database:DbConnection
 builder.Services.AddDbContext<VestgrensaDataContext>((services, builder) =>
 {
     builder.UseNpgsql(dbConnectionString);
-}, ServiceLifetime.Singleton);
+}, ServiceLifetime.Transient);
 // Setting up the services as singleton
-builder.Services.AddSingleton<ResidentService>();
-builder.Services.AddSingleton<MessageService>();
+builder.Services.AddTransient<ResidentService>();
+builder.Services.AddTransient<MessageService>();
 
 var app = builder.Build();
 // Configure the HTTP request pipeline.

@@ -15,6 +15,7 @@ public class MessageService
 
     public async Task<Message> addMessage(Message message)
     {
+        _dbContext.Attach(message.Resident);
         await _dbContext.Messages.AddAsync(message);
         await _dbContext.SaveChangesAsync();
         

@@ -9,6 +9,7 @@ public class Message
     public String Title { get; set; }
     public String Text { get; set; }
     
-    public Resident Author { get; set; }
+    // Navigation property
+    public Resident Resident { get; set; }
 
 }
