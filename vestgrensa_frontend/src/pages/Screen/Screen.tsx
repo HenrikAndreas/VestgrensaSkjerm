@@ -1,9 +1,9 @@
 
 import React, { FunctionComponent} from 'react';
 import Container from '@mui/material/Container';
-import Clock from '../Clock/Clock';
-import Headline from '../Headline/Headline';
-import Board from '../Board/Board';
+import Clock from '../../components/Clock/Clock';
+import Headline from '../../components/Headline/Headline';
+import Board from '../../components/Board/Board';
 
 import './Screen.css'
 
@@ -17,6 +17,7 @@ const Screen: FunctionComponent = (props) => {
             <div className="content">
                 <Headline/>
                 <Board/>
+                
                 
             </div>
         </div>

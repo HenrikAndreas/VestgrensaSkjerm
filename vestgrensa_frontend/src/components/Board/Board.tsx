@@ -7,8 +7,8 @@ import MessageList from '../MessageList/MessageList';
 function Board() {
   return (
     <Container className="Board">
-      {/* <PeopleList /> */}
-      <MessageList/>
+      <PeopleList />
+      {/* <MessageList/> */}
     </Container>
   );
 }

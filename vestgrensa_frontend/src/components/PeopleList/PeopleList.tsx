@@ -19,7 +19,7 @@ const PeopleList: FunctionComponent = () => {
     useEffect(() => {
         getPeople()
         .then((res: Array<Person>) => {
-
+            console.log(res)
             setPeople(res);
         })
         .catch((err) => {
@@ -42,7 +42,9 @@ const PeopleList: FunctionComponent = () => {
             </div>
             
             <div style={{color:"white", height: 300, width: '100%' }}>
-                <DataGrid rows={peopleData} columns={columns}
+                <DataGrid rows={peopleData} columns={columns} getRowId={(peopleData) => peopleData.residentID}
+
+
                 hideFooter
                     sx={{
                         color: "white",

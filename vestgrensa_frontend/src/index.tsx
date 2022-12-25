@@ -4,9 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Screen from './components/Screen/Screen';
-import Admin from './components/Admin/Admin';
-
+import Screen from './pages/Screen/Screen';
+import Admin from './pages/Admin/Admin';
+import Login from './pages/Login/Login';
 ReactDOM.render(
   <React.StrictMode>
 
@@ -14,6 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route element={<Screen/>} path='/skjerm'/>
         <Route element={<Admin/>} path='/admin'/>
+        <Route element={<Login/>} path='/login'/>
         <Route path='/'/>
 
       </Routes>
