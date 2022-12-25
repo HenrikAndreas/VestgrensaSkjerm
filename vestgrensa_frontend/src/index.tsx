@@ -7,15 +7,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Screen from './pages/Screen/Screen';
 import Admin from './pages/Admin/Admin';
 import Login from './pages/Login/Login';
+
+
 ReactDOM.render(
   <React.StrictMode>
 
     <BrowserRouter>
       <Routes>
-        <Route element={<Screen/>} path='/skjerm'/>
+        <Route element={<Admin/>} path='/'/>
         <Route element={<Admin/>} path='/admin'/>
+
         <Route element={<Login/>} path='/login'/>
-        <Route path='/'/>
+
+        <Route element={<Screen/>} path='/skjerm'/>
 
       </Routes>
     </BrowserRouter>
