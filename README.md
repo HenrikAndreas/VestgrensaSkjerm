@@ -3,6 +3,9 @@
 ## _TODO_
 
 - Setup Environment variables and good detection of Dev / Prod
+- Dockerize entire system
+- Good persistent login
+- Figure out free hosting services
 
 ## _Backend_
 

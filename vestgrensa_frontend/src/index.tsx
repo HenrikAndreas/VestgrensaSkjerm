@@ -10,7 +10,9 @@ import Login from './pages/Login/Login';
 
 
 ReactDOM.render(
+
   <React.StrictMode>
+
 
     <BrowserRouter>
       <Routes>

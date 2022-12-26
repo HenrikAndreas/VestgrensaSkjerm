@@ -3,11 +3,9 @@ import Container from '@mui/material/Container';
 import Person from "../../interfaces/Person"
 import Message from '../../interfaces/Message';
 import api from '../../api/api'
-import GoogleLogin from 'react-google-login'
-import { gapi } from 'gapi-script';
+import { Navigate } from 'react-router-dom';
 
-const gclientId : string = process.env.REACT_APP_GOOGLE_ID!!
-
+var isLoggedIn : boolean = false;
 
 async function getMe(): Promise<Array<Person>> {
     let response = await api.get<Array<Person>>('/Resident/GetResident', {
@@ -25,7 +23,7 @@ async function getMe(): Promise<Array<Person>> {
 //     return result;
 // }
 async function sendMsg(resident: Person) {
-    
+
     let query = await api.post('Message/AddMessage', {
         headers : {
             "Content-Type":"application/json",  
@@ -50,6 +48,7 @@ async function sendMsg(resident: Person) {
 const Admin: FunctionComponent = (props) => {
 
     const [me, setMe] = useState<Person>();
+
     
     useEffect(() => {
         getMe()
@@ -59,16 +58,13 @@ const Admin: FunctionComponent = (props) => {
         .catch((err) => {
             console.log(err);
         });
-
-        const initClient = () => {
-            gapi.client.init({
-                clientId: gclientId,
-                scope: ''
-            })
-            gapi.load('client:auth2', initClient);
-        }
+        
+        
     }, []);
-
+    
+    if (!isLoggedIn) {
+        return <Navigate to="/login"/>
+    }
 
     const addMsg = () => {
         if (me) {
@@ -76,25 +72,12 @@ const Admin: FunctionComponent = (props) => {
         }
     }
 
-    const onSuccess = (res:any) => {
-        console.log('success:', res);
-    };
-    const onFailure = (err:any) => {
-        console.log('failed:', err);
-    };
+
 
     return (
         <div className="Admin">
             <h1>Her kan du lage endringer</h1>
             <button onClick={addMsg} >Test getMessages</button>
-            <GoogleLogin
-                clientId={gclientId}
-                buttonText="Sign in with Google"
-                onSuccess={onSuccess}
-                onFailure={onFailure}
-                cookiePolicy={'single_host_origin'}
-                isSignedIn={true}
-            />
 
         </div>
     );
