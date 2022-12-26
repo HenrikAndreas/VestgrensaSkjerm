@@ -46,9 +46,9 @@ To list migrations (cd VestgrensaSkjerm.Data)
 
 We need dotnet ef
 
-- dotnet tools install dotnet-ef
+- dotnet tool install dotnet-ef
   Then update database
-- dotnet ef update database --project VestgrensaSkjerm
+- dotnet ef database update --project VestgrensaSkjerm
 
 ### _VestgrensaSkjerm.Common_
 
