@@ -62,9 +62,9 @@ const Admin: FunctionComponent = (props) => {
         
     }, []);
     
-    if (!isLoggedIn) {
-        return <Navigate to="/login"/>
-    }
+    // if (!isLoggedIn) {
+    //     return <Navigate to="/login"/>
+    // }
 
     const addMsg = () => {
         if (me) {
