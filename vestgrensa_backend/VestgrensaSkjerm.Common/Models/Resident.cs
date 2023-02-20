@@ -15,5 +15,5 @@ public class Resident
     public String University { get; set; }
     public DateTime Birthday { get; set; } 
     public Boolean Current { get; set; }
-    
+
 }

@@ -11,6 +11,8 @@
 
 ### _VestgrensaSkjerm_
 
+Swagger: https://localhost:7176/swagger/index.html
+
 This project contains the startup script, configuration and the API endpoints. All other parts of the project are abstracted in Data, Common and Services projects..
 
 Running on .NET 6.0
@@ -71,4 +73,10 @@ This project is a middleware for communicating with the database. When an API en
 Currently only local solution.
 Later -> Create prod database server to use instead of local docker container.
 
+Connect via terminal in docker:
+- psql -d vestgrensa -U henrik -h localhost
+
+
 ## _Frontend_
+
+Using Node version 16

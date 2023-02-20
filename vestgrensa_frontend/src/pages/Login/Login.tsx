@@ -8,7 +8,6 @@ const gclientId : string = process.env.REACT_APP_GOOGLE_ID!!
 
 
 const Login: FunctionComponent = (props) => {
-    
 
     useEffect( () => {
         const initClient = () => {
