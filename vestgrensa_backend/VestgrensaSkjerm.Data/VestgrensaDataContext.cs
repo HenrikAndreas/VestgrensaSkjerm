@@ -9,6 +9,8 @@ public class VestgrensaDataContext : DbContext
 {
     public DbSet<Resident> Residents { get; set; }
     public DbSet<Message> Messages { get; set; }
+
+    public DbSet<Room> Rooms { get; set; }
     
     public VestgrensaDataContext(DbContextOptions<VestgrensaDataContext> options): base(options)
     {
@@ -22,6 +24,11 @@ public class VestgrensaDataContext : DbContext
         modelBuilder.Entity<Resident>()
             .Property(resident => resident.Current)
             .HasDefaultValue(true);
+
+        modelBuilder.Entity<Resident>()
+            .HasOne(resident => resident.Room)
+            .WithOne(room => room.Resident)
+            .HasForeignKey<Room>(room => room.ID);
         
 
     }   

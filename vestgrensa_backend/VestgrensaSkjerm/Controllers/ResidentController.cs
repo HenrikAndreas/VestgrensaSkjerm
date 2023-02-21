@@ -19,7 +19,7 @@ public class ResidentController : ControllerBase
     }
 
     [HttpPost("AddResident")]
-    public async Task<ActionResult> AddResident(Resident resident)
+    public async Task<ActionResult> AddResident([FromQuery] Resident resident)
     {
         Console.Write("Adding Resident..." + resident.Name + "\n");
 

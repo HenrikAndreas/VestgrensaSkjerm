@@ -15,5 +15,7 @@ public class Resident
     public String University { get; set; }
     public DateTime Birthday { get; set; } 
     public Boolean Current { get; set; }
+    // Navigation property
+    public Room Room { get; set; }
 
 }

@@ -2,6 +2,7 @@
 
 ## _TODO_
 
+- [Current] Setting up messages and rooms with relation to Residents
 - Setup Environment variables and good detection of Dev / Prod
 - Dockerize entire system
 - Good persistent login
@@ -32,7 +33,7 @@ To Initially create a migration (Stay in root directory):
 
 - dotnet ef migrations add InitialCreate --startup-project VestgrensaSkjerm --project VestgrensaSkjerm.Data --context VestgrensaDataContext
 
-To create new migrations (cd into VestgrensaSkjerm)
+To create new migrations (cd into VestgrensaSkjerm) (project should not be running)
 
 - dotnet ef database update --project VestgrensaSkjerm
 
@@ -51,6 +52,9 @@ We need dotnet ef
 - dotnet tool install dotnet-ef
   Then update database
 - dotnet ef database update --project VestgrensaSkjerm
+
+
+Calculating Washingweek by giving the rooms type 1-4, and calulcating from there since its circular.
 
 ### _VestgrensaSkjerm.Common_
 
@@ -75,6 +79,9 @@ Later -> Create prod database server to use instead of local docker container.
 
 Connect via terminal in docker:
 - psql -d vestgrensa -U henrik -h localhost
+
+
+useful psql commands: \dt To view tables
 
 
 ## _Frontend_
