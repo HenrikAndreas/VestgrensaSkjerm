@@ -1,12 +1,11 @@
 # VestgrensaSkjerm
 
+A project for our housing collective to keep track of important messages to each other, schedules, events etc.
+
 ## _TODO_
 
 - [Current] Setting up messages and rooms with relation to Residents
-- Setup Environment variables and good detection of Dev / Prod
-- Dockerize entire system
-- Good persistent login
-- Figure out free hosting services
+
 
 ## _Backend_
 
